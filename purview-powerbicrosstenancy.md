@@ -9,6 +9,13 @@ The following instructions are targeted for the organizations who have the follo
 
 Power BI data source will be set in the root level in Purview
 
+## Requirements
+
+- Postman.
+- Power BI Admin rights in tenancy B.
+- Purview Admin rights in tenancy A.
+- User must have access to create AD Security Groups in tenancy B.
+
 ## App Registration (Tenancy B)
 
 1.Logging to your Azure Portal where your Power BI is part of. (Tenancy B).
