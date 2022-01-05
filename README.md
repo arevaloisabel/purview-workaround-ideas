@@ -1,9 +1,8 @@
 # Purview
 
-Purview is the new governance services for Azure.  I have spent few months working and learning on this services. Now I feel that I can start building this repository to help the community with some challanges. 
+Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. This new service helps organisation to understand the current state of their data
 
-I am starting with Power BI Cross tenancy set up in Purview
-
+I create this repository with the idea of helping the community with some currently challenges in Purview. 
 
 # Content
 
