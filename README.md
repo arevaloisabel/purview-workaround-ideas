@@ -7,4 +7,4 @@ I am starting with Power BI Cross tenancy set up in Purview
 
 # Content
 
-2. [Purview and Power BI Cross tenancy set up](./purview-powerbicrosstenancy.md)
+1. [Purview and Power BI Cross tenancy set up](./purview-powerbicrosstenancy.md)
