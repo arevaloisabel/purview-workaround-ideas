@@ -22,7 +22,8 @@ IMPORTANT Make sure you are able to create a service principle and AD Security G
 Note please make sure you fill the Redirect URIs with <https://app.powerbi.com/home?refreshAccessToken=true>
 
 3.Once the App is register check on Authentication and make sure the ID Token has been selected and Allow public client flow set to Yes
-:::image source="../purview-powerbi-crosstenancy/images/app-registration-token-setup.png" alt-text="App token":::
+
+ ![App Authentication](Images/app-registration-token-setup.png)
 
 Click on Save
 
@@ -30,7 +31,7 @@ Click on Save
 
 5.Go to API Permission and make sure you grand following access to the App
 
-:::image source="../purview-powerbi-crosstenancy/images/app-registration-API.png" alt-text="App registration API":::
+ ![App Permission](Images/app-registration-API.png)
 
 ## Create an AD Security Group (Tenancy B)
 
@@ -49,7 +50,7 @@ IMPORTANT You need to be a Power BI Admin to see the tenant settings page.
 
 2.Select Admin API settings > Allow service principals to use read-only Power BI admin APIs. Add the security group you created in the previous section.
 
-:::image source="../purview-powerbi-crosstenancy/images/power-bi-security-group-api-read-only.png" alt-text="App registration API":::
+ ![AD Group](Images/power-bi-security-group-api-read-only.png)
 
 3.Enable Enhance admin APIs responses with detailed metadata (Preview) for the security group.
 
@@ -102,7 +103,7 @@ For the body please use the following json definition.
 
 3.Once the call is sent, refresh your Purview and you should see the data source under the data map.
 
-:::image source="../purview-powerbi-crosstenancy/images/power-bi-data-source-purview.png" alt-text="Power BI  Data Source registration":::
+![Power BI Data](Images/power-bi-data-source-purview.png)
 
 4.Go back to Purview and grant permission to the Service Principle from Tenancy B to Purview.
 This service principle requires Collection Admin and Data Source Admin access at the root level.
@@ -141,8 +142,14 @@ Go to Purview and check if a scan was created :::image source="../purview-powerb
 
 ### Test
 
-1. Go to the scan created before, in my case it is called PowerBIScan. Click on the scan and select full scan. :::image source="../purview-powerbi-crosstenancy/images/power-bi-data-runscan-purview.png" alt-text="Power BI Scan":::
+1.Go to the scan created before, in my case it is called PowerBIScan. Click on the scan and select full scan. 
 
-2. Once the Scan complete, you should be able to see Assets discovered and ingested. :::image source="../purview-powerbi-crosstenancy/images/power-bi-data-runscan-sucess-purview.png" alt-text="Power BI Test success":::
+![Power BI Scan](Images/power-bi-data-runscan-purview.png)
 
-3. Search for Power BI reports, you should be able to see all the assets scanned. :::image source="../purview-powerbi-crosstenancy/images/power-bi-assets-purview.png" alt-text="Power BI Test success":::
+2.Once the Scan complete, you should be able to see Assets discovered and ingested. 
+
+![Power BI Scan](Images/power-bi-data-runscan-sucess-purview.png)
+
+3.Search for Power BI reports, you should be able to see all the assets scanned. 
+
+![Power BI Scan](Images/power-bi-assets-purview.png)
