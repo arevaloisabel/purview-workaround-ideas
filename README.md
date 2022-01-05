@@ -1,6 +1,10 @@
-# Power BI cross tenancy set up for Purview
+# Purview
 
-This repository described the steps to achieve Power BI cross tenancy set up in Purview using the API
+Purview is the new governance services for Azure.  I have spent few months working and learning on this services. Now I feel that I can start building this repository to help the community with some challanges. 
 
-The content is on the file called purview-powerbicrosstenancy.md
+I am starting with Power BI Cross tenancy set up in Purview
 
+
+# Content
+
+2. [Purview and Power BI Cross tenancy set up](./purview-powerbicrosstenancy.md)
