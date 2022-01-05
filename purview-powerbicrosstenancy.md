@@ -16,7 +16,8 @@ Power BI data source will be set in the root level in Purview
 IMPORTANT Make sure you are able to create a service principle and AD Security Group
 
 2.Create a new App registration under Azure Active Directory.
-:::image source="../purview-powerbi-crosstenancy/images/aad-app-registration-set-up.png" alt-text="App registration":::
+
+![](../purview-powerbi-crosstenancy/images/aad-app-registration-set-up.png)
 
 Note please make sure you fill the Redirect URIs with <https://app.powerbi.com/home?refreshAccessToken=true>
 
