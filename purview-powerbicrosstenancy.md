@@ -1,12 +1,3 @@
----
-title: Purview - Power BI cross tenancy 
-categories: analytics
-description: Setting up Power BI cross tenancy for Purview
-products:
-  - azure-purview
-  - power-bi
-
----
 ## Power BI cross tenancy set up in Purview
 
 ## Instructions
