@@ -4,6 +4,8 @@ Azure Purview is a unified data governance service that helps you manage and gov
 
 I create this repository with the idea of helping the community with some currently challenges in Purview. 
 
+**NOTE** Please let me know if instructions don't work 
+
 # Content
 
 1. [Purview and Power BI Cross tenancy set up](./purview-powerbicrosstenancy.md)
