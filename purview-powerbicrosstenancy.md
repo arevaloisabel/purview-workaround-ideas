@@ -138,7 +138,10 @@ User following values for the Headers
 
 IMPORTANT:- Make sure the username used in the API Call is also added as collection admin, data source admin at the root level.
 
-Go to Purview and check if a scan was created :::image source="../purview-powerbi-crosstenancy/images/power-bi-data-scan-purview.png" alt-text="Power BI Scan":::
+Go to Purview and check if a scan was created.
+
+![Power BI Scan](Images/power-bi-data-scan-purview.png)
+
 
 ### Test
 
