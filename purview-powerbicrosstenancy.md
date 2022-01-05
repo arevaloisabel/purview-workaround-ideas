@@ -17,7 +17,7 @@ IMPORTANT Make sure you are able to create a service principle and AD Security G
 
 2.Create a new App registration under Azure Active Directory.
 
-![](../purview-powerbi-crosstenancy/images/aad-app-registration-set-up.png)
+ ![](../images/aad-app-registration-set-up.png)
 
 Note please make sure you fill the Redirect URIs with <https://app.powerbi.com/home?refreshAccessToken=true>
 
