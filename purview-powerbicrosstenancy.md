@@ -1,8 +1,8 @@
-## Power BI cross tenancy set up in Purview
+# Power BI cross tenancy set up in Purview
 
 ## Instructions
 
-The following instructions are targeted for the organizations who have the following scenario
+The following instructions are targeted for the organizations who have the following scenario:
 
 - Purview Account set up in tenancy A.
 - Power BI set up in tenancy B.
@@ -28,7 +28,7 @@ Power BI data source will be set in the root level in Purview
 
 Note please make sure you fill the Redirect URIs with <https://app.powerbi.com/home?refreshAccessToken=true>
 
-3.Once the App is register check on Authentication and make sure the ID Token has been selected and allow public client flow to set to Yes
+3.Once the App is register check on **Authentication** and make sure the **ID Token** has been selected and **allow public client flow** to set to Yes
 
  ![App Authentication](Images/app-registration-token-setup.png)
 
@@ -36,7 +36,7 @@ Click on Save
 
 4.Generate a new client secret. Make sure you save the value, this value is required for later on
 
-5.Go to API Permission and make sure you grand following access to the App
+5.Go to **API Permission** and make sure you grand following access to the App
 
  ![App Permission](Images/app-registration-API.png)
 
@@ -97,7 +97,7 @@ For further information check <https://docs.microsoft.com/en-us/azure/purview/tu
 
 2.Create Power BI Data Source using PUT call.
 
-      <https://{nameofthePurviewaccount}.purview.azure.com/scan/datasources/{PowerBIDataSourceName}?api-version=2018-12-01-preview
+      https://{nameofthePurviewaccount}.purview.azure.com/scan/datasources/{PowerBIDataSourceName}?api-version=2018-12-01-preview
 
 User following values for the Headers.
 
@@ -107,7 +107,7 @@ User following values for the Headers.
 
 For the body, please use the following json definition.
 
-            {
+       {
           "kind": "PowerBI",
           "name": "PowerBIConnector",
           "authenticationType": "PowerBIDelegated",
@@ -131,7 +131,7 @@ This service principle requires Collection Admin and Data Source Admin access at
 
 5.We are now going to create the scan call using the PUT call  
 
-    <https://{PurviewaccountName}.purview.azure.com/scan/datasources/{PowerBIDataSourceName}/scans/PowerBIScan?api-version=2018-12-01-preview
+    https://{PurviewaccountName}.purview.azure.com/scan/datasources/{PowerBIDataSourceName}/scans/PowerBIScan?api-version=2018-12-01-preview
 
 User following values for the Headers
 
@@ -154,7 +154,6 @@ User following values for the Headers
           "kind": "PowerBIDelegated",
           "id": "scan1",
           "name": "PowerBI"
-        
         }
 
 **IMPORTANT** Make sure the username used in the API Call is also added as collection admin, data source admin at the root level.
