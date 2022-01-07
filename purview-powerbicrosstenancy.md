@@ -75,6 +75,20 @@ Log into the Power BI tenancy that you want to register in Purview. In this case
 - Data Source Admin
 - Data Curators
 
+3. Construct tenant-specific sign-in URL for your service principal by running the following url in your web browser:
+
+        https://login.microsoftonline.com/<purview_tenancy_id>/oauth2/v2.0/authorize?client_id=<client_id>&scope=openid&response_type=id_token&response_mode=fragment&state=1234&nonce=67890
+
+Replace:
+
+**<purview_tenant_id>** from the tenancy A.
+
+**<client_id>**  from the Service Principle in Tenancy B
+
+Sign-in using any non-admin account from tenancy A. This is required to provision your service principal in the foreign tenant.
+
+When prompted, accept permission requested for View your basic profile and Maintain access to data you have given it access to.
+
 ### API Call using Postman
 
 1.You require to get the authorisation token for your Purview account, use the following POST CALL to get the bearer token. <https://login.microsoftonline.com/{your-tenant-id}/oauth2/token>
